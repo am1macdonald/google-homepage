@@ -49,11 +49,76 @@ table {
 	border-spacing: 0;
 }
 
-<!-- Thus begins my CSS journey -->
+/*------  CSS for Page  ------*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+    width: 100vw;
+    height: auto;
+}
 
 a {
     text-decoration: none;
+    color: #000000;
 }
+
+/* NAV Bar */
+
+nav {
+    position: fixed;
+    top: 16px;
+    width: 100vw;
+    line-height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav-left {
+    margin-left: 30px;
+    display: flex;
+}
+
+#nl_store {
+    padding-left: 15px;
+}
+
+#nav-right {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+}
+#nr_l {
+    display: flex;
+    flex-direction: row;
+}
+.nr_l_a {
+    padding-right: 15px ;
+}
+#nr_r {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#sign-in {
+    display: inline-block;
+    border: 1px solid #4285f4;
+    border-radius: 2px;
+    background-color: #347ef5;
+    color:white;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 12px;
+}
+
+#nr_r_icon {
+    padding-right: 15px;
+}
+
+/*------  Center Content  ------*/
 
 .container {
     margin: 0;
@@ -61,14 +126,9 @@ a {
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
 
-    background-color: aqua;
-
-    width: auto;
-
-    text-align: center;
-    
+    text-align: center;   
 
     display: flex;
     flex-direction: column;
@@ -77,29 +137,136 @@ a {
 }
 
 .logo_container {
-    background-color: crimson;
 }
 
 .form{
-
-    background-color: yellow;
-
     display: flex;
     flex-direction: column;
-
 }
 
-.search_bar {
 
-    background-color: beige;
+.search-bar {
     display: flex;
     flex-direction: column;
+}
+
+#search-frame {
+    background-color: white;
+    color: gray;
+    border: 1px solid #dfe8e8;
+    border-radius: 50px;
+    margin-top: 30px;
+    width: 600px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+#search-frame:hover {
+    -webkit-box-shadow: 0px 0px 3px 1px #dfe8e8;
+
+}
+#search-field {
+    width: 90%;
+    height: 95%;
+    border: none;    
+}
+
+input[type=text]:invalid {
+    border:none;
 }
 
 .form_buttons {
-    
-    background-color: blue;
+
+    margin: 12px 0;
+    padding: 0 100px;
+    padding-top: 18px;
 
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+input[type=submit] {
+    color: gray;
+    position: static;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 54px;
+    height: 36px;    
+    line-height: 38px;
+    padding: 0 16px;
+    margin: 11px 4px;
+    border:hidden;
+    border-radius: 4px;
+}
+
+input[type=submit]:focus {
+    border: 1px solid
+    #4d90fe;
+    outline: none;
+}
+
+input[type=submit]:hover {
+    background-color: #eaf0f0;
+    line-height: 38px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: black;
+}
+
+.languages a {
+    color: blue;
+}
+
+/*------  Page Footer ------*/
+
+footer {
+    display: block;
+    font-size: 15px;
+    color: gray;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;    
+}
+footer a {
+    color: gray;
+    font-size: 13px;
+}
+#fc {    
+    background-color: #eaf0f0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bar {
+    height: 40px;
+    line-height: 40px;}
+#ft {
+    border: solid #dfe8e8;
+    border-width: 1px 0;
+}
+#ft p {
+    text-align: left;
+    position: static;
+    margin-left: 30px;
+}
+#fb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#fbl{
+    margin-left: 30px;
+}
+#fbl .fbt {
+    padding-right: 23px;
+}
+#fbr {
+    margin-right: 30px;    
+}
+#fbr .fbt {
+        padding-left: 23px;
 }

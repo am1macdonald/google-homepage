@@ -15,29 +15,26 @@
     <header>
 
         <nav>
-            <div id="nav_left">
+            <div id="nav-left">
 
                 <a href="#">About</a>
-                <a href="#">Store</a>
+                <a id="nl_store" href="#">Store</a>
 
             </div>
-            <div id="nav_right">
-                <div>
-                        <div>
-                            <a href="#">Gmail</a>
-                        </div>
-                        <div>
-                            <a href="#">Images</a>
-                        </div>
+            <div id="nav-right">
+                <div id="nr_l">
+                        <a class="nr_l_a" href="#">Gmail</a>
+                                                
+                        <a class="nr_l_a" href="#">Images</a>
+                        
                 </div>
-                <div>
-                    <div>
-                        <i class="material-icons" style="color: grey;">apps</i>
-                    </div>
-                            
-                    <div>
-                        <a href="#">Sign in</a>
-                    </div>
+                <div id="nr_r">
+                    
+                    <i id="nr_r_icon" class="material-icons" style="color: grey;">apps</i>
+                                            
+                    
+                    <a id="sign-in" href="#">Sign in</a>
+                    
                         
                 </div>
 
@@ -51,9 +48,12 @@
                 <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
             </div>
             <div class="form_container">
-                <form class="search_bar">
-                    <input type="search" id="search" name="search_term" required
+                <form class="search-bar">
+                    <div id="search-frame">
+                            <i class="material-icons">search</i>    
+                    <input id="search-field" type="text" id="search" name="search_term" required
                     minlength="1" >
+                    </div>
                     <div class="form_buttons">
                         <div class="form_button">
                             <input type="submit" name="Google_Search" value="Google Search">
@@ -65,13 +65,41 @@
                 </form>
             </div>
             <div class="languages">
-                <p>Google offered in: <a href="#">French</a></p>
+                <p>Google offered in: <a href="#">Français</a></p>
             </div>
         </div>
 
     </main>
 
     <footer>
+        <div id="fc">
+            <div id="ft" class="footer-bar">
+
+                <p>Canada</p>
+
+            </div>
+            <div id="fb" class="footer-bar">
+                <div  id="fbl">
+
+                    <a class="fbt" href="#">Advertising</a>
+
+                    <a class="fbt"  href="#">Business</a>
+
+                    <a class="fbt"  href="#">How Search Works</a>
+                    
+                </div>
+                <div  id="fbr" >
+
+                    <a class="fbt"  href="#">Privacy</a>
+                    
+                    <a class="fbt"  href="#">Terms</a>
+                    
+                    <a class="fbt"  href="#">Settings</a>
+                
+                </div>
+            </div>
+
+        </div>
 
     </footer>
 </body>
